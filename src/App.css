@@ -1,0 +1,237 @@
+a {
+    font-family: "Outfit", sans-serif;
+}
+
+button {
+    font-family: "Outfit", sans-serif;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Outfit", sans-serif;
+}
+
+.product_detail_box {
+    padding: 20px 20px;
+    border: 1px solid #ababab;
+    height: 100%;
+    border-radius: 12px;
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.color-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    svg {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+    }
+}
+
+.color-btn.active {
+    transform: scale(1.1);
+    border: 2px solid #FF5722;
+}
+
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media(max-width:768px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile_menu_icons {
+
+        position: relative;
+        z-index: 999999;
+    }
+}
+
+.theme_btn {
+    background: #FF5722;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+
+.theme_btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.feature_product_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    p {
+        color: black;
+    }
+}
+
+.product_item {
+    border: 2px solid #dcdcdc;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px) {
+    .feature_product_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.feature_section h2 {
+    font-size: 24px;
+    min-height: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.modern-ecomm-footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding: 80px 0 60px 0;
+    border-top: 1px solid #e9ecef;
+    color: #495057;
+}
+
+/* Column 1: Brand & Logo Style */
+.modern-ecomm-footer .footer-brand-wrapper {
+    margin-bottom: 24px;
+}
+
+/* Modern Mockup Logo replacing the basic text/image box gracefully */
+.modern-ecomm-footer .footer-logo-mock {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1a2530;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.modern-ecomm-footer .footer-logo-mock span {
+    color: #0d6efd;
+    margin-right: 4px;
+}
+
+.modern-ecomm-footer .footer-description {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: #6c757d;
+    font-weight: 400;
+    max-width: 320px;
+}
+
+/* Headings Style */
+.modern-ecomm-footer .footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a2530;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Subtle modern bottom accent line for headings */
+.modern-ecomm-footer .footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+/* Links & Lists Custom Reset for Modern UI */
+.modern-ecomm-footer .footer-links-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.modern-ecomm-footer .footer-links-list li {
+    margin-bottom: 12px;
+}
+
+.modern-ecomm-footer .footer-links-list li a {
+    font-size: 0.92rem;
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Elegant Hover Transition effect */
+.modern-ecomm-footer .footer-links-list li a:hover {
+    color: #0d6efd;
+    transform: translateX(5px);
+}
+
+/* Contact/Email Specific Design */
+.modern-ecomm-footer .footer-email-link {
+    font-size: 0.95rem;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.modern-ecomm-footer .footer-email-link:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+
+.modern-ecomm-footer .footer-bottom-bar {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.85rem;
+    color: #8c92ac;
+}
