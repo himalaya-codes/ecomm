@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import styled from "styled-components";
@@ -18,16 +17,12 @@ import ScrollToTop from "./components/ScrollToTop";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function App() {
-
-
   return (
     <>
-
       <Router>
         <ScrollToTop />
-        <Header />
-        <Main>
-
+        <Main className="container">
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -40,19 +35,13 @@ function App() {
             <Route path="*" element={<ErrorPage />} />
           </Routes>
 
+          <Footer />
         </Main>
-        <Footer />
-
       </Router>
-
     </>
-  )
+  );
 }
 
-const Main = styled.main`
-   
-    max-width: 1200px;
-    margin: auto;
-`;
+const Main = styled.main``;
 
-export default App
+export default App;
