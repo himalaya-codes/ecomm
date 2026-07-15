@@ -11,6 +11,7 @@ const Product = (productItem) => {
         <Product_Item className="product_item">
           <NavLink to={`/singleproduct/${id}`}>
             <h2>{title}</h2>
+            <p>Product ID: {id}</p>
             <figure>
               <img
                 src={images}
