@@ -8,9 +8,10 @@ const Product = (productItem) => {
   return (
     <>
       <div className=" col-md-4">
-        <Product_Item className="product_item">
+        <Product_Item className="product_item h-100">
           <NavLink to={`/singleproduct/${id}`}>
             <h2>{title}</h2>
+            <p>Product ID: {id}</p>
             <figure>
               <img
                 src={images}
